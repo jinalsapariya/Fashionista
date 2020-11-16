@@ -1,0 +1,31 @@
+<!-- <app-product-list></app-product-list> -->
+
+<div class="row">
+    <div class="col-sm-4 porductHolder" *ngFor="let product of products">
+        <div class="col-item">
+            <div class="photo">
+                <a><img src="../../assets/img/iphone-12-pro-family-hero.jpg" class="img-responsive" alt="a" /></a>
+            </div>
+            <div class="info col-md-8" style="margin: 2rem;">
+                <div class="row">
+                    <div class="price col-sx-12 col-sm-12 col-md-12 col-lg-12">
+                        <h5 class=" title"> {{ product.name }}</h5>
+                    </div>
+
+                    <div class="price col-sx-12 col-sm-12 col-md-12 col-lg-1">
+                        <h5 class="text-center price">$ {{ product.price}} </h5>
+                    </div>
+                </div>
+
+                <div class="separator clear-left">
+                    <p class="btn-add">
+                        <i class="fa fa-shopping-cart hoverClass"></i><a class="hidden-sm hoverClass">Add to cart</a></p>
+                    <p class="btn-details">
+                        <i class="fa fa-eye hoverClass"></i><a class="hidden-sm hoverClass">View</a></p>
+                </div>
+                <div class="clearfix">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
